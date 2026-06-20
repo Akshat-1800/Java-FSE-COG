@@ -1,0 +1,97 @@
+1. BIG O NOTATION
+----------------------------------------------------------------------
+
+Big O notation is used to describe the performance and efficiency of an
+algorithm. It measures how the execution time or memory usage grows as
+the size of the input increases.
+
+Common Time Complexities:
+
+O(1)       - Constant Time
+O(log n)   - Logarithmic Time
+O(n)       - Linear Time
+O(n log n) - Efficient Sorting Algorithms
+O(n²)      - Quadratic Time
+
+Big O notation helps developers compare algorithms and select the most
+efficient solution for a given problem.
+
+----------------------------------------------------------------------
+2. SEARCH OPERATIONS
+----------------------------------------------------------------------
+
+Best Case:
+The target element is found immediately.
+
+Average Case:
+The target element is found after checking some elements.
+
+Worst Case:
+The target element is found at the last position or is not present in
+the collection.
+
+----------------------------------------------------------------------
+3. LINEAR SEARCH
+----------------------------------------------------------------------
+
+Linear Search checks each element one by one until the target element
+is found or all elements have been examined.
+
+Time Complexity:
+
+Best Case    : O(1)
+Average Case : O(n)
+Worst Case   : O(n)
+
+Advantages:
+- Simple to implement.
+- Works on both sorted and unsorted data.
+
+Disadvantages:
+- Slow for large datasets because every element may need to be checked.
+
+----------------------------------------------------------------------
+4. BINARY SEARCH
+----------------------------------------------------------------------
+
+Binary Search repeatedly divides the search space into two halves until
+the target element is found.
+
+Requirements:
+- The data must be sorted before performing Binary Search.
+
+Time Complexity:
+
+Best Case    : O(1)
+Average Case : O(log n)
+Worst Case   : O(log n)
+
+Advantages:
+- Much faster than Linear Search for large datasets.
+- Efficient for sorted collections.
+
+Disadvantages:
+- Requires data to be sorted.
+
+----------------------------------------------------------------------
+5. COMPARISON OF LINEAR SEARCH AND BINARY SEARCH
+----------------------------------------------------------------------
+
+Linear Search:
+- Works on unsorted data.
+- Simpler implementation.
+- Time Complexity: O(n).
+
+Binary Search:
+- Requires sorted data.
+- More efficient for large datasets.
+- Time Complexity: O(log n).
+
+----------------------------------------------------------------------
+6. CONCLUSION
+----------------------------------------------------------------------
+
+Binary Search is more suitable for an e-commerce platform because
+product catalogs usually contain a large number of products. When the
+product data is maintained in sorted order, Binary Search provides
+significantly faster search performance compared to Linear Search.
