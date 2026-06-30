@@ -1,0 +1,60 @@
+1. Recursion
+
+Recursion is a programming technique in which a method calls itself
+to solve a problem. A recursive solution generally consists of:
+
+- Base Case: Stops the recursion.
+- Recursive Case: Calls itself with a smaller subproblem.
+
+Recursion can simplify problems that can be broken into smaller
+similar subproblems.
+
+----------------------------------------------------------------
+
+2. Future Value Prediction
+
+Future value can be calculated using a growth rate.
+
+Formula:
+
+Future Value = Present Value × (1 + Growth Rate)
+
+For multiple years:
+
+FV(n) = FV(n-1) × (1 + Growth Rate)
+
+This relationship makes recursion suitable for forecasting.
+
+----------------------------------------------------------------
+
+3. Time Complexity
+
+Recursive Algorithm:
+
+T(n) = T(n-1) + O(1)
+
+Time Complexity = O(n)
+
+Space Complexity = O(n)
+because recursive calls are stored in the call stack.
+
+----------------------------------------------------------------
+
+4. Optimization
+
+To avoid excessive computation:
+
+- Use Iteration instead of Recursion.
+- Use Dynamic Programming (Memoization).
+- Store previously calculated values.
+
+These techniques reduce repeated calculations and improve efficiency.
+
+----------------------------------------------------------------
+
+5. Conclusion
+
+Recursion provides a simple and intuitive solution for financial
+forecasting. However, for large datasets or long forecasting periods,
+iterative approaches or memoization are preferred for better
+performance.
