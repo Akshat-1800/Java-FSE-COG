@@ -19,8 +19,9 @@ public class SpringLearnApplication {
 	public static void main(String[] args) {
 
 		LOGGER.info("START");
-
 		SpringApplication.run(SpringLearnApplication.class, args);
+		displayCountry();
+
 
 		LOGGER.info("END");
 	}
@@ -35,5 +36,15 @@ public class SpringLearnApplication {
 		Date date = format.parse("31/12/2018");
 
 		System.out.println(date);
+	}
+	public static void displayCountry() {
+
+		ApplicationContext context =
+				new ClassPathXmlApplicationContext("country.xml");
+
+		Country country =
+				context.getBean("country", Country.class);
+
+		LOGGER.debug("Country : {}", country.toString());
 	}
 }
